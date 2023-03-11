@@ -14,7 +14,7 @@ else
     echo "No input verilog file"
 fi
 
-result=`iverilog $1.v $1_tb.v -o ./exe/$1 2>&1`
+result=`iverilog $1.v $1_tb.v -o ./exe/$1.out 2>&1`
 
 if [ -n "$result" ]
 then
