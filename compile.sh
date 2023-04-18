@@ -3,6 +3,7 @@
 file_name=$1
 
 mkdir -p exe
+mkdir -p vcd
 
 rm -rf ./vcd/$1.vcd 
 rm -rf ./exe/$1
@@ -24,7 +25,7 @@ else
     echo "Compile success!"
 fi
 
-./exe/$1
+./exe/$1.out
 
 gtkwave ./vcd/$1.vcd
 
