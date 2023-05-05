@@ -6,7 +6,7 @@ mkdir -p exe
 mkdir -p vcd
 
 rm -rf ./vcd/$1.vcd 
-rm -rf ./exe/$1
+rm -rf ./exe/$1.out
 
 if [ -n "$1" ]
 then
